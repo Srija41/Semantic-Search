@@ -1,0 +1,712 @@
+[
+  {
+    "text": "Name: Single Tweet Method: GET URL: https://api.twitter.com/2/tweets/:id Description: This endpoint returns details about the Tweet specified by the requested ID. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets-id) for this endpoint. QueryParams: tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics ), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,non_public_metrics,organic_metrics,preview_image_url,promoted_metrics,public_metrics,type,url,width Default values: media_key,type OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username) Responses: { \"data\": { \"author_id\": \"2244994945\", \"created_at\": \"2020-06-24T16:28:14.000Z\", \"entities\": { \"urls\": [ { \"start\": 140, \"end\": 163, \"url\": \"https://t.co/IKM3zo6ngu\", \"expanded_url\": \"https://blog.twitter.com/developer/en_us/topics/tips/2020/how-to-analyze-the-sentiment-of-your-own-tweets.html\", \"display_url\": \"blog.twitter.com/developer/en_u…\", \"images\": [ { \"url\": \"https://pbs.twimg.com/news_img/1275828115110060033/WIbBrSld?format=jpg&name=orig\", \"width\": 1600, \"height\": 600 }, { \"data\": { \"attachments\": { \"media_keys\": [ \"13_1263145212760805376\" ] }, \"author_id\": \"783214\", \"created_at\": \"2020-05-20T16:31:15.000Z\", \"entities\": { \"urls\": [ { \"start\": 154, \"end\": 177, \"url\": \"https://t.co/pV53mvjAVT\", \"expanded_url\": \"https://twitter.com/Twitter/status/1263145271946551300/video/1\", \"display_url\": \"pic.twitter.com/pV53mvjAVT\" } ] }, \"id\": \"1263145271946551300\", \"lang\": \"en\", \"possibly_sensitive\": false, \"source\": \"Sprinklr\", \"text\": \"Testing, testing...\\n\\nA new way to have a",
+    "meta": {
+      "name": "Single Tweet",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/:id",
+      "chunk_index": 0,
+      "id": "1bc835fc25da56ccfcb09fe298ffaa68184206ac"
+    }
+  },
+  {
+    "text": "\"display_url\": \"blog.twitter.com/developer/en_u…\", \"images\": [ { \"url\": \"https://pbs.twimg.com/news_img/1275828115110060033/WIbBrSld?format=jpg&name=orig\", \"width\": 1600, \"height\": 600 }, { \"data\": { \"attachments\": { \"media_keys\": [ \"13_1263145212760805376\" ] }, \"author_id\": \"783214\", \"created_at\": \"2020-05-20T16:31:15.000Z\", \"entities\": { \"urls\": [ { \"start\": 154, \"end\": 177, \"url\": \"https://t.co/pV53mvjAVT\", \"expanded_url\": \"https://twitter.com/Twitter/status/1263145271946551300/video/1\", \"display_url\": \"pic.twitter.com/pV53mvjAVT\" } ] }, \"id\": \"1263145271946551300\", \"lang\": \"en\", \"possibly_sensitive\": false, \"source\": \"Sprinklr\", \"text\": \"Testing, testing...\\n\\nA new way to have a convo w { \"data\": { \"attachments\": { \"poll_ids\": [ \"1199786642468413448\" ] }, \"id\": \"1199786642791452673\", \"text\": \"C#\" }, \"includes\": { \"polls\": [ { \"duration_minutes\": 1440, \"end_datetime\": \"2019-11-28T20:26:41.000Z\", \"id\": \"1199786642468413448\", \"options\": [ { \"position\": 1, \"label\": \"“C Sharp”\", \"votes\": 795 }, { \"position\": 2, \"label\": \"“C Hashtag”\", \"votes\": 156 } ], \"voting_ { \"data\": { \"geo\": { \"place_id\": \"01a9a39529b27f36\" }, \"id\": \"1136017751028449283\", \"text\": \"We’re getting ready to #TapIntoTwitter with our NYC developer community! See you soon @TwitterNYC https://t.co/5rEn5dhsAq\" }, \"includes\": { \"places\": [ { \"country\": \"United States\", \"country_code\": \"US\", \"full_name\": \"Manhattan, NY\", \"geo\": { \"type\": \"Feature\", \"bbox\": [ -74.026675, 40.683935, -73.910408, 40.877483 ], \"properties\": {} }, \"id\": \"01a9a39529b2 { \"data\": { \"id\": \"20\", \"text\": \"just setting up my twttr\" } } Rate limit exceeded { \"errors\": [ { \"detail\": \"Could not find tweet with id: [1276230436478386177].\", \"title\": \"Not Found Error\", \"resource_type\": \"tweet\", \"parameter\": \"id\", \"value\": \"1276230436478386177\", \"type\": \"https://api.twitter.com/2/problems/resource-not-found\" } ] }",
+    "meta": {
+      "name": "Single Tweet",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/:id",
+      "chunk_index": 1,
+      "id": "3e0a779b70bc983c3949e74980c2e85fa3252cb9"
+    }
+  },
+  {
+    "text": "Name: Single Tweet Usercontext Method: GET URL: https://api.twitter.com/2/tweets/:id Description: This endpoint returns details about the Tweet specified by the requested ID. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets-id) for this endpoint. QueryParams: tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics ), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,non_public_metrics,organic_metrics,preview_image_url,promoted_metrics,public_metrics,type,url,width Default values: media_key,type OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username) Responses: { \"data\": { \"id\": \"20\", \"text\": \"just setting up my twttr\" } } Rate limit exceeded { \"data\": { \"geo\": { \"place_id\": \"01a9a39529b27f36\" }, \"id\": \"1136017751028449283\", \"text\": \"We’re getting ready to #TapIntoTwitter with our NYC developer community! See you soon @TwitterNYC https://t.co/5rEn5dhsAq\" }, \"includes\": { \"places\": [ { \"country\": \"United States\", \"country_code\": \"US\", \"full_name\": \"Manhattan, NY\", \"geo\": { \"type\": \"Feature\", \"bbox\": [ -74.026675, 40.683935, -73.910408, 40.877483 ], \"properties\": {} }, \"id\": \"01a9a39529b2 { \"data\": { \"attachments\": { \"poll_ids\": [",
+    "meta": {
+      "name": "Single Tweet Usercontext",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/:id",
+      "chunk_index": 0,
+      "id": "18accc091c02c67acdc635e3f55fac97db3a2243"
+    }
+  },
+  {
+    "text": "\"geo\": { \"place_id\": \"01a9a39529b27f36\" }, \"id\": \"1136017751028449283\", \"text\": \"We’re getting ready to #TapIntoTwitter with our NYC developer community! See you soon @TwitterNYC https://t.co/5rEn5dhsAq\" }, \"includes\": { \"places\": [ { \"country\": \"United States\", \"country_code\": \"US\", \"full_name\": \"Manhattan, NY\", \"geo\": { \"type\": \"Feature\", \"bbox\": [ -74.026675, 40.683935, -73.910408, 40.877483 ], \"properties\": {} }, \"id\": \"01a9a39529b2 { \"data\": { \"attachments\": { \"poll_ids\": [ \"1199786642468413448\" ] }, \"id\": \"1199786642791452673\", \"text\": \"C#\" }, \"includes\": { \"polls\": [ { \"duration_minutes\": 1440, \"end_datetime\": \"2019-11-28T20:26:41.000Z\", \"id\": \"1199786642468413448\", \"options\": [ { \"position\": 1, \"label\": \"“C Sharp”\", \"votes\": 795 }, { \"position\": 2, \"label\": \"“C Hashtag”\", \"votes\": 156 } ], \"voting_ { \"errors\": [ { \"detail\": \"Could not find tweet with id: [1276230436478386177].\", \"title\": \"Not Found Error\", \"resource_type\": \"tweet\", \"parameter\": \"id\", \"value\": \"1276230436478386177\", \"type\": \"https://api.twitter.com/2/problems/resource-not-found\" } ] } { \"data\": { \"attachments\": { \"media_keys\": [ \"13_1263145212760805376\" ] }, \"author_id\": \"783214\", \"created_at\": \"2020-05-20T16:31:15.000Z\", \"entities\": { \"urls\": [ { \"start\": 154, \"end\": 177, \"url\": \"https://t.co/pV53mvjAVT\", \"expanded_url\": \"https://twitter.com/Twitter/status/1263145271946551300/video/1\", \"display_url\": \"pic.twitter.com/pV53mvjAVT\" } ] }, \"id\": \"1263145271946551300\", \"lang\": \"en\", \"possibly_sensitive\": false, \"source\": \"Sprinklr\", \"text\": \"Testing, testing...\\n\\nA new way to have a convo w { \"data\": { \"author_id\": \"2244994945\", \"created_at\": \"2020-06-24T16:28:14.000Z\", \"entities\": { \"urls\": [ { \"start\": 140, \"end\": 163, \"url\": \"https://t.co/IKM3zo6ngu\", \"expanded_url\": \"https://blog.twitter.com/developer/en_us/topics/tips/2020/how-to-analyze-the-sentiment-of-your-own-tweets.html\", \"display_url\": \"blog.twitter.com/developer/en_u…\", \"images\": [ { \"url\": \"https://pbs.twimg.com/news_img/1275828115110060033/WIbBrSld?format=jpg&name=orig\", \"width\": 1600, \"height\": 600 },",
+    "meta": {
+      "name": "Single Tweet Usercontext",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/:id",
+      "chunk_index": 1,
+      "id": "356b2a4dd6864c33808c232c86ad03daa578b4db"
+    }
+  },
+  {
+    "text": "Name: Multiple Tweets Method: GET URL: https://api.twitter.com/2/tweets?ids= Description: This endpoint returns details about up to 100 Tweets specified by the requested IDs. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets) for this endpoint. QueryParams: ids= (Required. Enter up to 100 comma-separated Tweet IDs.), tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics ), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,non_public_metrics,organic_metrics,preview_image_url,promoted_metrics,public_metrics,type,url,width Default values: media_key,type OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username) Responses: { \"data\": [ { \"id\": \"20\", \"text\": \"just setting up my twttr\" }, { \"id\": \"1276501058211262464\", \"text\": \"Add new voices and conversations to your Timeline using Lists.\\n\\nYou can now:\\n👉 make a List\\n👉 discover new Lists\\n👉 follow a List\\n👉 Tweet a List\\nhttps://t.co/BabQnqOX4r https://t.co/ATG2vi3Dxf\" }, { \"id\": \"1275244210439028736\", \"text\": \"Need to follow what’s happening in real time? Change your timeline to show latest Tweets instead of top Tweets. https://t.co/dpI2lRmj9F\" }, {",
+    "meta": {
+      "name": "Multiple Tweets",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets?ids=",
+      "chunk_index": 0,
+      "id": "24d6d8594d9ff07f0869f2f02f4cff8ef74847f5"
+    }
+  },
+  {
+    "text": "up my twttr\" }, { \"id\": \"1276501058211262464\", \"text\": \"Add new voices and conversations to your Timeline using Lists.\\n\\nYou can now:\\n👉 make a List\\n👉 discover new Lists\\n👉 follow a List\\n👉 Tweet a List\\nhttps://t.co/BabQnqOX4r https://t.co/ATG2vi3Dxf\" }, { \"id\": \"1275244210439028736\", \"text\": \"Need to follow what’s happening in real time? Change your timeline to show latest Tweets instead of top Tweets. https://t.co/dpI2lRmj9F\" }, { \"id\": \"1274087695145332736\", \"text\": \"📍 Oakland\\n🗣️ @YoliZama https://t.co/lcGDLzAJIn\" }, { \"id\": \"1274087694105075714\", { \"errors\": [ { \"parameters\": { \"ids\": [ \"20,1276230436478386177,1276501058211262464,1275244210439028736,1274087695145332736,1274087694105075714,1274087692003770368,1274087690758090752,1274087689487134720,1274087688321200128,1274087687469715457,1274034244700930049,1274025734990897152,1276440670631124993,1276426779796750338,1276420300641406976,1276346768490328064,1276301871515222017,1276175944105865216,1276172826764926976,1276172649299763200,1276171938449121280,1276171724111765504,1276171627386957824,1276170528387035136,1276168667517071361,1276048583557394432,1276035881992740864,1276009123876749312,1276009123620851712,1275981562811527170,1275930077927141376,1275832645574733824,1275817073755611136,1275816972459012101,127580624852538 { \"data\": [ { \"id\": \"20\", \"text\": \"just setting up my twttr\" } ], \"errors\": [ { \"detail\": \"Could not find tweet with ids: [1276230436478386177].\", \"title\": \"Not Found Error\", \"resource_type\": \"tweet\", \"parameter\": \"ids\", \"value\": \"1276230436478386177\", \"type\": \"https://api.twitter.com/2/problems/resource-not-found\" } ] } Rate limit exceeded { \"data\": [ { \"author_id\": \"12\", \"conversation_id\": \"20\", \"created_at\": \"2006-03-21T20:50:14.000Z\", \"id\": \"20\", \"text\": \"just setting up my twttr\" }, { \"attachments\": { \"media_keys\": [ \"16_1276500934466703361\" ] }, \"author_id\": \"783214\", \"conversation_id\": \"1276501058211262464\", \"created_at\": \"2020-06-26T13:02:23.000Z\", \"entities\": { \"urls\": [ { \"start\": 143, \"end\": 166, \"url\": \"https://t.co/BabQnqOX4r\", \"expanded_url\": \"https://twitter.com/i/lists/sug",
+    "meta": {
+      "name": "Multiple Tweets",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets?ids=",
+      "chunk_index": 1,
+      "id": "c2dce6832ed582b2599d0b751dd78e9e61f6d8b0"
+    }
+  },
+  {
+    "text": "Name: User by ID\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/:id\n\nDescription: This endpoint returns details about a user by ID. \n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-id) for this endpoint.\n\nQueryParams: user.fields= (Comma-separated fields for the user object.\n\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\n\nDefault values:\nid,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAllowed value:\npinned_tweet_id\n\nDefault value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required.\n\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld\n\nDefault values:\nid,text\n\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics)\n\nResponses: {\n    \"data\": {\n        \"created_at\": \"2013-12-14T04:35:55.000Z\",\n        \"description\": \"The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API. \\n\\n#BlackLivesMatter\",\n        \"entities\": {\n            \"url\": {\n                \"urls\": [\n                    {\n                        \"start\": 0,\n                        \"end\": 23,\n                        \"url\": \"https://t.co/3ZX3TNiZCY\",\n                        \"expanded_url\": \"https://developer.twitter.com/en/community\",\n                        \"display_url\": \"developer.twitter.com/en/community\"\n                    }\n                ]\n            },\n            \"description\": {\n                \"hashtags\": [\n                    {\n                        \"start\": 23,\n                     {\n    \"data\": {\n        \"id\": \"2244994945\",\n        \"name\": \"Twitter Dev\",\n        \"username\": \"TwitterDev\"\n    }\n} {\n    \"errors\": [\n        {\n            \"detail\": \"Could not find user with id: [2244994946].\",\n            \"title\": \"Not Found Error\",\n            \"resource_type\": \"user\",\n            \"parameter\": \"id\",\n            \"value\": \"2244994946\",\n            \"type\": \"https://api.twitter.com/2/problems/resource-not-found\"\n        }\n    ]\n} {\n    \"data\": {\n        \"created_at\": \"2020-06-17T19:10:19.000Z\",\n        \"description\": \"\",\n        \"id\": \"1273332037970202626\",\n        \"name\": \"Clou\",\n        \"profile_image_url\": \"https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png\",\n        \"protected\": true,\n        \"url\": \"\",\n        \"username\": \"Clou18829992\",\n        \"verified\": false\n    }\n} Rate limit exceeded",
+    "meta": {
+      "name": "User by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id",
+      "chunk_index": 0,
+      "id": "ab023ef9f3ed307068293fdd5022da1152442f4c"
+    }
+  },
+  {
+    "text": "Name: Users by ID Method: GET URL: https://api.twitter.com/2/users?ids= Description: This endpoint returns details about up to 100 users by ID. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users) for this endpoint. QueryParams: ids= (Required. Enter up to 100 comma-separated user IDs.), user.fields= (Comma-separated fields for the user object. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object. Allowed value: pinned_tweet_id Default value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics) Responses: { \"data\": [ { \"id\": \"783214\", \"name\": \"Twitter\", \"username\": \"Twitter\" }, { \"id\": \"2244994945\", \"name\": \"Twitter Dev\", \"username\": \"TwitterDev\" }, { \"id\": \"6253282\", \"name\": \"Twitter API\", \"username\": \"TwitterAPI\" }, { \"id\": \"495309159\", \"name\": \"Twitter New York City\", \"username\": \"TwitterNYC\" }, { \"id\": \"172020392\", \"name\": \"Twitter San Francisco\", \"username\": \"TwitterSF\" }, { \"id\": \"95731075\", \"name\": \"Twitter Safety\", \"username\": \"TwitterSafety\" }, { \"id\": { \"errors\": [ { \"parameters\": { \"ids\": [ \"783214,2244994945,6253282,495309159,172020392,95731075,2548985366,277761722,17874544,300392950,87532773,372575989,3260518932,121291606,158079127,3282859598,103770785,586198217,216531294,1526228120,222953824,1603818258,2548979088,2244983430,1347713256,376825877,6844292,738118115595165697,738118487122419712,218984871,2550997820,1159458169,2296297326,234489024,3873936134,2228891959,791978718,427475002,1194267639100723200,1168976680867762177,905409822,738115375477362688,88723966,1049385226424786944,284201599,1705676064,2861317614,3873965293,1244731491088809984,4172587277,717465714357972992,862314223,2551000568,2548977510,1159274324,783214,2244994945,6253282,495309159,172020392,95731075,2548985 { \"data\": [ { \"id\": \"12\", \"name\": \"jack\", \"username\": \"jack\" }, { \"id\": \"2244994945\", \"name\": \"Twitter Dev\", \"username\": \"TwitterDev\" } ], \"errors\": [ { \"detail\": \"Could not find user with ids: [2244994946].\", \"title\": \"Not Found Error\", \"resource_type\": \"user\", \"parameter\": \"ids\", \"value\": \"2244994946\", \"type\": \"https://api.twitter.com/2/problems/resource-not-found\" } ] } { \"data\": [ { \"created_at\": \"2007-02-20T14:35:54.000Z\", \"description\": \"#BlackTransLivesMatter\\n#BlackLivesMatter\", \"entities\": { \"url\": { \"urls\": [ { \"start\": 0, \"end\": 23, \"url\": \"https://t.co/TAXQpspyHn\", \"expanded_url\": \"https://about.twitter.com/\", \"display_url\": \"about.twitter.com\" } ] }, \"description\": { \"hashtags\": [",
+    "meta": {
+      "name": "Users by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users?ids=",
+      "chunk_index": 0,
+      "id": "3c48a69617b196ee2e56179fdc6fc24e2db525bc"
+    }
+  },
+  {
+    "text": "} ], \"errors\": [ { \"detail\": \"Could not find user with ids: [2244994946].\", \"title\": \"Not Found Error\", \"resource_type\": \"user\", \"parameter\": \"ids\", \"value\": \"2244994946\", \"type\": \"https://api.twitter.com/2/problems/resource-not-found\" } ] } { \"data\": [ { \"created_at\": \"2007-02-20T14:35:54.000Z\", \"description\": \"#BlackTransLivesMatter\\n#BlackLivesMatter\", \"entities\": { \"url\": { \"urls\": [ { \"start\": 0, \"end\": 23, \"url\": \"https://t.co/TAXQpspyHn\", \"expanded_url\": \"https://about.twitter.com/\", \"display_url\": \"about.twitter.com\" } ] }, \"description\": { \"hashtags\": [ { \"start\": 0, \"end\": 22, { \"data\": [ { \"created_at\": \"2007-02-20T14:35:54.000Z\", \"description\": \"#BlackTransLivesMatter\\n#BlackLivesMatter\", \"entities\": { \"url\": { \"urls\": [ { \"start\": 0, \"end\": 23, \"url\": \"https://t.co/TAXQpspyHn\", \"expanded_url\": \"https://about.twitter.com/\", \"display_url\": \"about.twitter.com\" } ] }, \"description\": { \"hashtags\": [ { \"start\": 0, \"end\": 22,",
+    "meta": {
+      "name": "Users by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users?ids=",
+      "chunk_index": 1,
+      "id": "0ae582e990149ab2ff336cb1e371558c0e8a9f99"
+    }
+  },
+  {
+    "text": "Name: User by Username\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/by/username/:username\n\nDescription: This endpoint returns details about a user by username. \n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-by-username-username) for this endpoint.\n\nQueryParams: user.fields= (Comma-separated fields for the user object.\n\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\n\nDefault values:\nid,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAllowed value:\npinned_tweet_id\n\nDefault value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required.\n\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\n\nDefault values:\nid,text\n\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics)\n\nResponses: Rate limit exceeded\n {\n    \"data\": {\n        \"id\": \"2244994945\",\n        \"name\": \"Twitter Dev\",\n        \"username\": \"TwitterDev\"\n    }\n} {\n    \"data\": {\n        \"created_at\": \"2013-12-14T04:35:55.000Z\",\n        \"description\": \"The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API. \\n\\n#BlackLivesMatter\",\n        \"entities\": {\n            \"url\": {\n                \"urls\": [\n                    {\n                        \"start\": 0,\n                        \"end\": 23,\n                        \"url\": \"https://t.co/3ZX3TNiZCY\",\n                        \"expanded_url\": \"https://developer.twitter.com/en/community\",\n                        \"display_url\": \"developer.twitter.com/en/community\"\n                    }\n                ]\n            },\n            \"description\": {\n                \"hashtags\": [\n                    {\n                        \"start\": 23,\n                     {\n    \"errors\": [\n        {\n            \"detail\": \"Could not find user with username: [TwitterDec].\",\n            \"title\": \"Not Found Error\",\n            \"resource_type\": \"user\",\n            \"parameter\": \"username\",\n            \"value\": \"TwitterDec\",\n            \"type\": \"https://api.twitter.com/2/problems/resource-not-found\"\n        }\n    ]\n}",
+    "meta": {
+      "name": "User by Username",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/by/username/:username",
+      "chunk_index": 0,
+      "id": "08763e7cd40420a8cc23bd72940c9648b24ca8ad"
+    }
+  },
+  {
+    "text": "Name: Users by Username Method: GET URL: https://api.twitter.com/2/users/by?usernames= Description: This endpoint returns details about up to 100 users specified by username. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-by) for this endpoint. QueryParams: usernames= (Required. Enter up to 100 comma-separated usernames.), user.fields= (Comma-separated fields for the user object. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object. Allowed value: pinned_tweet_id Default value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics) Responses: { \"data\": [ { \"created_at\": \"2007-02-20T14:35:54.000Z\", \"description\": \"Black queer lives matter.\\nBlack trans lives matter.\\n#BlackLivesMatter\", \"entities\": { \"url\": { \"urls\": [ { \"start\": 0, \"end\": 23, \"url\": \"https://t.co/TAXQpspyHn\", \"expanded_url\": \"https://about.twitter.com/\", \"display_url\": \"about.twitter.com\" } ] }, \"description\": { \"hashtags\": [ { \"start\": 52, \"end { \"data\": [ { \"created_at\": \"2007-02-20T14:35:54.000Z\", \"description\": \"Black queer lives matter.\\nBlack trans lives matter.\\n#BlackLivesMatter\", \"entities\": { \"url\": { \"urls\": [ { \"start\": 0, \"end\": 23, \"url\": \"https://t.co/TAXQpspyHn\", \"expanded_url\": \"https://about.twitter.com/\", \"display_url\": \"about.twitter.com\" } ] }, \"description\": { \"hashtags\": [ { \"start\": 52, \"end Rate limit exceeded { \"errors\": [ { \"parameters\": { \"usernames\": [ \"twitter,twitterdev,twitterapi,twitternyc,twittersf,twittersafety,blackbirds,twitteruk,twittersupport,twittersports,twitterdesign,twitternews,twittermoments,twitterbusiness,nonprofits,twittervideo,twitterindia,twittertv,twitterkorea,twitterdata,twittergov,twitterir,twitteralas,twittersg,twittercanada,twitteross,twittereng,twitterstripes,twitterasians,policy,twitterid,twittergovjp,ukmoments,twittercomms,twittergaming,twittermena,officialpartner,twitterbooks,twitterretweets,twitterable,twittersre,momentsindia,twitterseguro,twittermiami,terns,jointheflockjp,twitterfashnjp,momentses,twitterthailand,momentsbrasil,twittervideoin,twittermusicjp,twittermktlatam,jointheflockbr,twittersportsjp, { \"data\": [ { \"id\": \"783214\", \"name\": \"Twitter\", \"username\": \"Twitter\" }, { \"id\": \"2244994945\", \"name\": \"Twitter Dev\", \"username\": \"TwitterDev\" }, { \"id\": \"6253282\", \"name\": \"Twitter API\", \"username\": \"TwitterAPI\" }, { \"id\": \"495309159\", \"name\": \"Twitter New York City\", \"username\": \"TwitterNYC\" }, { \"id\": \"172020392\", \"name\": \"Twitter San Francisco\", \"username\": \"TwitterSF\" }, { \"id\": \"95731075\",",
+    "meta": {
+      "name": "Users by Username",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/by?usernames=",
+      "chunk_index": 0,
+      "id": "5a119bb63593cbcb1c68c0bafee2a358ceaef321"
+    }
+  },
+  {
+    "text": "[ { \"parameters\": { \"usernames\": [ \"twitter,twitterdev,twitterapi,twitternyc,twittersf,twittersafety,blackbirds,twitteruk,twittersupport,twittersports,twitterdesign,twitternews,twittermoments,twitterbusiness,nonprofits,twittervideo,twitterindia,twittertv,twitterkorea,twitterdata,twittergov,twitterir,twitteralas,twittersg,twittercanada,twitteross,twittereng,twitterstripes,twitterasians,policy,twitterid,twittergovjp,ukmoments,twittercomms,twittergaming,twittermena,officialpartner,twitterbooks,twitterretweets,twitterable,twittersre,momentsindia,twitterseguro,twittermiami,terns,jointheflockjp,twitterfashnjp,momentses,twitterthailand,momentsbrasil,twittervideoin,twittermusicjp,twittermktlatam,jointheflockbr,twittersportsjp, { \"data\": [ { \"id\": \"783214\", \"name\": \"Twitter\", \"username\": \"Twitter\" }, { \"id\": \"2244994945\", \"name\": \"Twitter Dev\", \"username\": \"TwitterDev\" }, { \"id\": \"6253282\", \"name\": \"Twitter API\", \"username\": \"TwitterAPI\" }, { \"id\": \"495309159\", \"name\": \"Twitter New York City\", \"username\": \"TwitterNYC\" }, { \"id\": \"172020392\", \"name\": \"Twitter San Francisco\", \"username\": \"TwitterSF\" }, { \"id\": \"95731075\", \"name\": \"Twitter Safety\", \"username\": \"TwitterSafety\" }, { \"id\": { \"data\": [ { \"id\": \"495309159\", \"name\": \"Twitter New York City\", \"username\": \"TwitterNYC\" }, { \"id\": \"172020392\", \"name\": \"Twitter San Francisco\", \"username\": \"TwitterSF\" }, { \"id\": \"95731075\", \"name\": \"Twitter Safety\", \"username\": \"TwitterSafety\" }, { \"id\": \"2548985366\", \"name\": \"Twitter Blackbirds\", \"username\": \"Blackbirds\" }, { \"id\": \"277761722\", \"name\": \"Twitter UK\", \"username\": \"TwitterUK\" }, { \"id\": \"17874544\", \"name\": \"Twitter Support\", \"username\": \"TwitterSupport\" },",
+    "meta": {
+      "name": "Users by Username",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/by?usernames=",
+      "chunk_index": 1,
+      "id": "d25dc2f9c62859e71e634a8c0f62a3063c99aceb"
+    }
+  },
+  {
+    "text": "Name: Followers of user ID\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/:id/followers\n\nDescription: Returns a list of users who are followers of the specified user ID.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/get-users-id-followers) for this endpoint.\n\nQueryParams: user.fields= (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\nDefault values:\nid,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics), max_results= (The maximum number of search results to be returned by a request.\nAllowed values: 10 through 5000.\nDefault value: 100), pagination_token= (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.)",
+    "meta": {
+      "name": "Followers of user ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/followers",
+      "chunk_index": 0,
+      "id": "a430f41b37d2a3923e072e58e053d8a359b12ddf"
+    }
+  },
+  {
+    "text": "Name: Users a user ID is following\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/:id/following\n\nDescription: Returns a list of users the specified user ID is following.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/get-users-id-following) for this endpoint.\n\nQueryParams: user.fields= (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,witheld\nDefault values:\nid,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics), max_results= (The maximum number of search results to be returned by a request.\nAllowed values: 10 through 5000.\nDefault value: 100), pagination_token= (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.)",
+    "meta": {
+      "name": "Users a user ID is following",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/following",
+      "chunk_index": 0,
+      "id": "a40475a750167d8c456bd6ababac64a28079bd26"
+    }
+  },
+  {
+    "text": "Name: Follow a user ID\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/following\n\nDescription: Allows a user ID to follow another user.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/post-users-source_user_id-following) for this endpoint.\n\nRequestBody: {\n    \"target_user_id\": \"2244994945\"\n}",
+    "meta": {
+      "name": "Follow a user ID",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/following",
+      "chunk_index": 0,
+      "id": "0aad02f7185bd17e6ae37fb53f63b9a707d67fb0"
+    }
+  },
+  {
+    "text": "Name: Unfollow a user ID\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/users/:source_user_id/following/:target_user_id\n\nDescription: Allows a user ID to unfollow another user.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/delete-users-source_user_id-following) for this endpoint.",
+    "meta": {
+      "name": "Unfollow a user ID",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/users/:source_user_id/following/:target_user_id",
+      "chunk_index": 0,
+      "id": "9e0274ab35baeb0d8171340dbc7c45221861a5e9"
+    }
+  },
+  {
+    "text": "Name: Block a user ID\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/blocking\n\nDescription: Allows a user ID to block another user.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/blocks/api-reference/post-users-user_id-blocking) for this endpoint.\n\nRequestBody: // Replace id-you-want-to-block with the ID you wish to block\n{\n    \"target_user_id\": \"id-you-want-to-block\"\n}",
+    "meta": {
+      "name": "Block a user ID",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/blocking",
+      "chunk_index": 0,
+      "id": "5e532daf62707d28967b896b5efa905d70d32c88"
+    }
+  },
+  {
+    "text": "Name: Blocks lookup\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/:id/blocking\n\nDescription: Returns a list of users who are blocked by the specified user ID.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/blocks/api-reference/get-users-blocking) for this endpoint.\n\nQueryParams: user.fields=None (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\nDefault values:\nid,name,username), expansions=None (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields=None (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics), max_results=None (The maximum number of results to be returned by a request.\nAllowed values: 1 through 1000.\nDefault value: 100), pagination_token=None (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.)",
+    "meta": {
+      "name": "Blocks lookup",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/blocking",
+      "chunk_index": 0,
+      "id": "53ba0b6b4be5b57eb12aa8d00df29ee5cb3cf00e"
+    }
+  },
+  {
+    "text": "Name: Unblock a user ID\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/users/:source_user_id/blocking/:target_user_id\n\nDescription: Allows a user ID to unblock another user.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/blocks/api-reference/delete-users-user_id-blocking) for this endpoint.",
+    "meta": {
+      "name": "Unblock a user ID",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/users/:source_user_id/blocking/:target_user_id",
+      "chunk_index": 0,
+      "id": "dba4f236776c80e23c5cb4704a64d4ea7c36ff81"
+    }
+  },
+  {
+    "text": "Name: Like a Tweet\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/likes\n\nDescription: Allows an authenticated user to like a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/post-users-user_id-likes) for this endpoint.\n\nRequestBody: // Replace tweet-id-you-want-to-like with the ID you wish to like\n{\n    \"tweet_id\": \"tweet-id-you-want-to-like\"\n}",
+    "meta": {
+      "name": "Like a Tweet",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/likes",
+      "chunk_index": 0,
+      "id": "5f12fd5da0c7d3c1f51374e904863e8c4ea6181c"
+    }
+  },
+  {
+    "text": "Name: Liked Tweets\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/:id/liked_tweets\n\nDescription: Returns a list of Tweets that have been liked by a specified user ID.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/get-users-id-liked_tweets) for this endpoint.\n\nQueryParams: user.fields=None (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\nDefault values:\nid,name,username), expansions=None (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields=None (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics), max_results=None (The maximum number of results to be returned by a request.\nAllowed values: 5 through 100.\nDefault value: 100), pagination_token=None (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.)",
+    "meta": {
+      "name": "Liked Tweets",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/liked_tweets",
+      "chunk_index": 0,
+      "id": "5006b4b8b019f710836cfc239b85da4f62ecb734"
+    }
+  },
+  {
+    "text": "Name: Liking users\n\nMethod: GET\n\nURL: https://api.twitter.com/2/tweets/:id/liking_users\n\nDescription: Returns a list of users who have liked a specified Tweet ID.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/get-tweets-id-liking_users) for this endpoint.\n\nQueryParams: user.fields= (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\nDefault values:\nid,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics)",
+    "meta": {
+      "name": "Liking users",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/:id/liking_users",
+      "chunk_index": 0,
+      "id": "058fb5fa757fc84e48af2225666bd01096a0eeaf"
+    }
+  },
+  {
+    "text": "Name: Unlike a Tweet\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/users/:id/likes/:tweet_id\n\nDescription: Allows an authenticated user to unlike a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/delete-users-user_id-likes) for this endpoint.",
+    "meta": {
+      "name": "Unlike a Tweet",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/users/:id/likes/:tweet_id",
+      "chunk_index": 0,
+      "id": "08fec54a09bc6ad3c6ee26c6074aa76b1eada037"
+    }
+  },
+  {
+    "text": "Name: Retweet a Tweet\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/retweets\n\nDescription: Allows an authenticated user to Retweet a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/post-users-id-retweets) for this endpoint.\n\nRequestBody: {\n    \"tweet_id\": \"1415348607813832708\"\n}",
+    "meta": {
+      "name": "Retweet a Tweet",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/retweets",
+      "chunk_index": 0,
+      "id": "241c5b1013e31332a834e4788cc8abf7e3a9f075"
+    }
+  },
+  {
+    "text": "Name: Retweeted by\n\nMethod: GET\n\nURL: https://api.twitter.com/2/tweets/:id/retweeted_by\n\nDescription: Returns a list of users who have liked a specified Tweet ID.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/reweets/api-reference/get-tweets-id-retweeted_by) for this endpoint.\n\nQueryParams: user.fields= (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\nDefault values:\nid,name,username), expansions= (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics)",
+    "meta": {
+      "name": "Retweeted by",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/:id/retweeted_by",
+      "chunk_index": 0,
+      "id": "db7bbe97776f9baa97c7c10b76031c5036036593"
+    }
+  },
+  {
+    "text": "Name: Undo a Retweet\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/users/:id/retweets/:source_tweet_id\n\nDescription: Allows an authenticated user to unlike a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/reweets/api-reference/delete-users-id-retweets-tweet_id) for this endpoint.",
+    "meta": {
+      "name": "Undo a Retweet",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/users/:id/retweets/:source_tweet_id",
+      "chunk_index": 0,
+      "id": "a522091f926569a15d695d7df062da69879f359a"
+    }
+  },
+  {
+    "text": "Name: Create a Tweet\n\nMethod: POST\n\nURL: https://api.twitter.com/2/tweets\n\nDescription: Allows an authenticated user to create a Tweet. \n\nYou can add parameters to post polls, quote Tweets, Tweet with reply settings, and Tweet to Super Followers in addition to other features.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/manage-tweets/api-reference/post-tweet) for this endpoint.\n\nRequestBody: {\n    \"text\": \"Hello World!\"\n}",
+    "meta": {
+      "name": "Create a Tweet",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets",
+      "chunk_index": 0,
+      "id": "cb2b14a8293e993c7a41e372c08b68103fa65192"
+    }
+  },
+  {
+    "text": "Name: Delete a Tweet\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/tweets/:id\n\nDescription: Allows an authenticated user to delete a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/manage-tweets/api-reference/delete-tweet) for this endpoint.",
+    "meta": {
+      "name": "Delete a Tweet",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/tweets/:id",
+      "chunk_index": 0,
+      "id": "5dc4cee98d24edfd99878a7d5ff421b06efc6789"
+    }
+  },
+  {
+    "text": "Name: Mute a user ID\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/muting\n\nDescription: Allows a user ID to mute another user.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/mutes/api-reference/post-users-user_id-muting) for this endpoint.\n\nRequestBody: // Replace id-you-want-to-mute with the ID you wish to mute\n{\n    \"target_user_id\": \"id-you-want-to-mute\"\n}",
+    "meta": {
+      "name": "Mute a user ID",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/muting",
+      "chunk_index": 0,
+      "id": "b9a7b826d49f02e6c8ed8462028cb03709ca7010"
+    }
+  },
+  {
+    "text": "Name: Unmute a user ID\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/users/:source_user_id/muting/:target_user_id\n\nDescription: Allows a user ID to unmute another user.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/mutes/api-reference/delete-users-user_id-muting) for this endpoint.",
+    "meta": {
+      "name": "Unmute a user ID",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/users/:source_user_id/muting/:target_user_id",
+      "chunk_index": 0,
+      "id": "d48fd7ffd1f0ca1ca7b132a8a11fdfdbdcde4bfa"
+    }
+  },
+  {
+    "text": "Name: Mutes lookup\n\nMethod: GET\n\nURL: https://api.twitter.com/2/users/:id/muting\n\nDescription: Returns a list of users who are muted by the specified user ID.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/users/mutes/api-reference/get-users-muting) for this endpoint.\n\nQueryParams: user.fields=None (Comma-separated fields for the user object.\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\nDefault values:\nid,name,username), expansions=None (Expansions enable requests to expand an ID into a full object in the includes response object.\nAllowed value:\npinned_tweet_id\nDefault value: none), tweet.fields=None (Comma-separated list of fields for the Tweet object. Expansion required.\nAllowed values:\nattachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,source,text,withheld\nDefault values:\nid,text\nOAuth1.0a User Context authorization required if any of the following fields are included in the request:\nnon_public_metrics,organic_metrics,promoted_metrics), max_results=None (The maximum number of results to be returned by a request.\nAllowed values: 1 through 1000.\nDefault value: 100), pagination_token=None (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.)",
+    "meta": {
+      "name": "Mutes lookup",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/muting",
+      "chunk_index": 0,
+      "id": "8f0dccea5d20c9c5c436829db40d8f2e0ab90663"
+    }
+  },
+  {
+    "text": "Name: Create a list\n\nMethod: POST\n\nURL: https://api.twitter.com/2/lists\n\nDescription: Allows the authenticated user to create a new List.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/post-lists) for this endpoint.\n\nRequestBody: {\n    \"name\": \"name-for-new-list\",\n    \"description\": \"description-of-list\",\n    \"private\": false\n}",
+    "meta": {
+      "name": "Create a list",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/lists",
+      "chunk_index": 0,
+      "id": "f353c36cb99a1498bfdc3b2ea80dc596670404e0"
+    }
+  },
+  {
+    "text": "Name: Add a member\n\nMethod: POST\n\nURL: https://api.twitter.com/2/lists/:id/members\n\nDescription: Allows the authenticated user to add a member to a List they own.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/post-lists-id-members) for this endpoint.\n\nRequestBody: {\n    \"user_id\": \"user-id-to-add\"\n}",
+    "meta": {
+      "name": "Add a member",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/lists/:id/members",
+      "chunk_index": 0,
+      "id": "d40d81761f5873995ddda729403ba90a7395e868"
+    }
+  },
+  {
+    "text": "Name: Follow a list\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/followed_lists\n\nDescription: Allows the authenticated user to follow a specified List.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/post-users-id-followed-lists) for this endpoint.\n\nRequestBody: {\n    \"list_id\": \"list-id-to-follow\"\n}",
+    "meta": {
+      "name": "Follow a list",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/followed_lists",
+      "chunk_index": 0,
+      "id": "38e463572ca15b727f5f11ff4581ec6b8691ad85"
+    }
+  },
+  {
+    "text": "Name: Pin a list\n\nMethod: POST\n\nURL: https://api.twitter.com/2/users/:id/pinned_lists\n\nDescription: Allows the authenticated user to pin a specified List.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/post-users-id-pinned-lists) for this endpoint.\n\nRequestBody: {\n    \"list_id\": \"list-id-to-pin\"\n}",
+    "meta": {
+      "name": "Pin a list",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/users/:id/pinned_lists",
+      "chunk_index": 0,
+      "id": "092eef59d54c1b409a43e85b31524660e96def7f"
+    }
+  },
+  {
+    "text": "Name: Delete a list\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/lists/:id\n\nDescription: Allows the authenticated user to delete a list they own.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/delete-lists-id) for this endpoint.",
+    "meta": {
+      "name": "Delete a list",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/lists/:id",
+      "chunk_index": 0,
+      "id": "62660f79571457796db45e751e968cf611c25382"
+    }
+  },
+  {
+    "text": "Name: Remove a member\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/lists/:id/members/:user_id\n\nDescription: Allows the authenticated user to remove a member from a List they own.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/delete-lists-id-members-user_id) for this endpoint.",
+    "meta": {
+      "name": "Remove a member",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/lists/:id/members/:user_id",
+      "chunk_index": 0,
+      "id": "4b0dfdb7f78515256bbddf6660cef345135fb790"
+    }
+  },
+  {
+    "text": "Name: Unfollow a list\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/users/:id/followed_lists/:list_id\n\nDescription: Allows the authenticated user to unfollow a specified List.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/delete-users-id-followed-lists-list_id) for this endpoint.",
+    "meta": {
+      "name": "Unfollow a list",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/users/:id/followed_lists/:list_id",
+      "chunk_index": 0,
+      "id": "dfb1b14b933a01087a3287ec45580924ff28e525"
+    }
+  },
+  {
+    "text": "Name: Unpin a list\n\nMethod: DELETE\n\nURL: https://api.twitter.com/2/lists/:id/pinned_lists/:list_id\n\nDescription: Allows the authenticated user to unpin a specified List.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/delete-users-id-pinned-lists-list_id) for this endpoint.",
+    "meta": {
+      "name": "Unpin a list",
+      "method": "DELETE",
+      "url": "https://api.twitter.com/2/lists/:id/pinned_lists/:list_id",
+      "chunk_index": 0,
+      "id": "78eaf262e2594b0980b6dc5e056569f5992ba0d8"
+    }
+  },
+  {
+    "text": "Name: Update a list\n\nMethod: PUT\n\nURL: https://api.twitter.com/2/lists/:id\n\nDescription: Allows the authenticated user to update a List they own.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/put-lists-id) for this endpoint.\n\nRequestBody: {\n    \"name\": \"update-name\",\n    \"description\": \"update-description\",\n    \"private\": false\n}",
+    "meta": {
+      "name": "Update a list",
+      "method": "PUT",
+      "url": "https://api.twitter.com/2/lists/:id",
+      "chunk_index": 0,
+      "id": "0e39717e121612045ff67636c5ea32989bb68a87"
+    }
+  },
+  {
+    "text": "Name: User Tweet timeline by ID Method: GET URL: https://api.twitter.com/2/users/:id/tweets Description: Returns the most recent Tweets composed by a single user specified by the requested user ID. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-tweets) for this endpoint. QueryParams: max_results=None (Specifies the number of Tweets to try and retrieve, up to a maximum of 100 per distinct request. Retweets and replies are included in the count, even if `exclude=retweets,replies` are supplied. By default, 10 results are returned if this parameter is not supplied. The minimum permitted value is 5. ), start_time=None (YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339). The oldest or earliest UTC timestamp from which the Tweets will be provided. Only the 3200 most recent Tweets are available. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). Minimum allowable time is 2010-11-06T00:00:00Z), end_time=None (YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339). The oldest or earliest UTC timestamp from which the Tweets will be provided. Only the 3200 most recent Tweets are available. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). Minimum allowable time is 2010-11-06T00:00:00Z), since_id=None (Returns results with an ID greater than (that is, more recent than) the specified ID. Only the 3200 most recent Tweets are available. The result will exclude the `since_id`. If the limit of Tweets has occurred since the `since_id`, the `since_id` will be forced to the oldest ID available.), until_id=None (Returns results with an ID less less than (that is, older than) the specified ID. Only the 3200 most recent Tweets are available. The",
+    "meta": {
+      "name": "User Tweet timeline by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/tweets",
+      "chunk_index": 0,
+      "id": "c47b85c2c2d9d5dd18af8a57c35d4591a2f2024a"
+    }
+  },
+  {
+    "text": "ID. Only the 3200 most recent Tweets are available. The result will exclude the `since_id`. If the limit of Tweets has occurred since the `since_id`, the `since_id` will be forced to the oldest ID available.), until_id=None (Returns results with an ID less less than (that is, older than) the specified ID. Only the 3200 most recent Tweets are available. The result will exclude the `until_id`. If the limit of Tweets has occurred since the `until_id`, the `until_id` will be forced to the most recent ID available.), pagination_token=None (This parameter is used to move forwards or backwards through pages of results, based on the value of the `next_token` or `previous_token` in the response. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username), media.fields=None (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,non_public_metrics,organic_metrics,preview_image_url,promoted_metrics,public_metrics,type,url,width Default values: media_key,type), place.fields=None (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields=None (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options)",
+    "meta": {
+      "name": "User Tweet timeline by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/tweets",
+      "chunk_index": 1,
+      "id": "8e2ccaaf86e5d2577de091420f2aaf931989782c"
+    }
+  },
+  {
+    "text": "Name: User mention timeline by ID Method: GET URL: https://api.twitter.com/2/users/:id/mentions Description: Returns the most recent Tweets mentioning a single user specified by the requested user ID. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-mentions) for this endpoint. QueryParams: max_results=None (Specifies the number of Tweets to try and retrieve, up to a maximum of 100 per distinct request. Retweets and replies are included in the count, even if `exclude=retweets,replies` are supplied. By default, 10 results are returned if this parameter is not supplied. The minimum permitted value is 5. ), start_time=None (YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339). The oldest or earliest UTC timestamp from which the Tweets will be provided. Only the 3200 most recent Tweets are available. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). Minimum allowable time is 2010-11-06T00:00:00Z), end_time=None (YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339). The oldest or earliest UTC timestamp from which the Tweets will be provided. Only the 3200 most recent Tweets are available. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). Minimum allowable time is 2010-11-06T00:00:00Z), since_id=None (Returns results with an ID greater than (that is, more recent than) the specified ID. Only the 3200 most recent Tweets are available. The result will exclude the `since_id`. If the limit of Tweets has occurred since the `since_id`, the `since_id` will be forced to the oldest ID available.), until_id=None (Returns results with an ID less less than (that is, older than) the specified ID. Only the 3200 most recent Tweets are available. The result",
+    "meta": {
+      "name": "User mention timeline by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/mentions",
+      "chunk_index": 0,
+      "id": "d34ef698c60dc6093179bd70ab46fa755ddc210e"
+    }
+  },
+  {
+    "text": "Only the 3200 most recent Tweets are available. The result will exclude the `since_id`. If the limit of Tweets has occurred since the `since_id`, the `since_id` will be forced to the oldest ID available.), until_id=None (Returns results with an ID less less than (that is, older than) the specified ID. Only the 3200 most recent Tweets are available. The result will exclude the `until_id`. If the limit of Tweets has occurred since the `until_id`, the `until_id` will be forced to the most recent ID available.), pagination_token=None (This parameter is used to move forwards or backwards through pages of results, based on the value of the `next_token` or `previous_token` in the response. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username), media.fields=None (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,non_public_metrics,organic_metrics,preview_image_url,promoted_metrics,public_metrics,type,url,width Default values: media_key,type), place.fields=None (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields=None (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options)",
+    "meta": {
+      "name": "User mention timeline by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/users/:id/mentions",
+      "chunk_index": 1,
+      "id": "885baaeefd35c3070b21b5d6d9c3628a471840a0"
+    }
+  },
+  {
+    "text": "Name: Hide a reply\n\nMethod: PUT\n\nURL: https://api.twitter.com/2/tweets/:id/hidden\n\nDescription: Provides the ability to hide a reply to a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/hide-replies/api-reference/put-tweets-id-hidden) for this endpoint.\n\nRequestBody: {\n    \"hidden\": true\n}",
+    "meta": {
+      "name": "Hide a reply",
+      "method": "PUT",
+      "url": "https://api.twitter.com/2/tweets/:id/hidden",
+      "chunk_index": 0,
+      "id": "c8ac0af7d16d202cebe433865104cb61d173a449"
+    }
+  },
+  {
+    "text": "Name: Unhide a reply\n\nMethod: PUT\n\nURL: https://api.twitter.com/2/tweets/:id/hidden\n\nDescription: Provides the ability to unhide a reply to a Tweet.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/hide-replies/api-reference/put-tweets-id-hidden) for this endpoint.\n\nRequestBody: {\n    \"hidden\": false\n}",
+    "meta": {
+      "name": "Unhide a reply",
+      "method": "PUT",
+      "url": "https://api.twitter.com/2/tweets/:id/hidden",
+      "chunk_index": 0,
+      "id": "397ba198094920ac591cf193c27236624830125e"
+    }
+  },
+  {
+    "text": "Name: Recent search Method: GET URL: https://api.twitter.com/2/tweets/search/recent?query= Description: Search for public Tweets created in the last 7 days. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent) for this endpoint. QueryParams: query= (Required. Query for matching Tweets. Up to 512 characters.), start_time= (The oldest UTC timestamp (from most recent 7 days) from which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), end_time= (The newest, most recent UTC timestamp to which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), since_id= (Returns results with a Tweet ID greater than (that is, more recent than) the specified ID. The ID specified is exclusive and responses will not include it.), until_id= (Returns results with a Tweet ID less than (that is, older than) the specified ID. The ID specified is exclusive and responses will not include it.), max_results= (The maximum number of search results to be returned by a request. A number between 10 and the system limit (currently 100). By default, a request response will return 10 results.), next_token= (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.), tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields=",
+    "meta": {
+      "name": "Recent search",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/recent?query=",
+      "chunk_index": 0,
+      "id": "4340f876c6bf12cdec744c3354a3abcf966a9419"
+    }
+  },
+  {
+    "text": "list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,non_public_metrics,organic_metrics,preview_image_url,promoted_metrics,public_metrics,type,url,width Default values: media_key,type OAuth1.0a User Context authorization required if any of the following fields are included in the request: non_public_metrics,organic_metrics,promoted_metrics), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username) Responses: { \"data\": [ { \"attachments\": { \"media_keys\": [ \"3_1277604962361462785\" ] }, \"created_at\": \"2020-06-30T17:39:06.000Z\", \"entities\": { \"hashtags\": [ { \"start\": 55, \"end\": 61, \"tag\": \"TLOU2\" }, { \"start\": 62, \"end\": 79, \"tag\": \"TheLastofUsPart2\" } ], \"mentions\": [ { \"start\": 3, \"end\": 18, \"username\": \"CritterOfHabit\" { \"data\": [ { \"attachments\": { \"media_keys\": [ \"16_1276035971193044992\" ] }, \"author_id\": \"63046977\", \"created_at\": \"2020-06-25T06:14:19.000Z\", \"entities\": { \"mentions\": [ { \"start\": 0, \"end\": 8, \"username\": \"snowman\" } ], \"urls\": [ { \"start\": 90, \"end\": 113, \"url\": \"https://t.co/14TzLYBBXi\", \"expanded_url\": \"https://twitter.com/happycamper/status/1276035977375477760/photo/1\", { \"data\": [ { \"author_id\": \"1176828691365736451\", \"created_at\": \"2020-06-24T17:19:07.000Z\", \"entities\": { \"mentions\": [ { \"start\": 3, \"end\": 14, \"username\": \"skipbolden\" } ] }, \"id\": \"1275840892285399041\", \"lang\": \"en\", \"possibly_sensitive\": false, \"referenced_tweets\": [ { \"type\":",
+    "meta": {
+      "name": "Recent search",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/recent?query=",
+      "chunk_index": 1,
+      "id": "d813638f4db03ff373454e5b1080e791196d9daf"
+    }
+  },
+  {
+    "text": "\"author_id\": \"63046977\", \"created_at\": \"2020-06-25T06:14:19.000Z\", \"entities\": { \"mentions\": [ { \"start\": 0, \"end\": 8, \"username\": \"snowman\" } ], \"urls\": [ { \"start\": 90, \"end\": 113, \"url\": \"https://t.co/14TzLYBBXi\", \"expanded_url\": \"https://twitter.com/happycamper/status/1276035977375477760/photo/1\", { \"data\": [ { \"author_id\": \"1176828691365736451\", \"created_at\": \"2020-06-24T17:19:07.000Z\", \"entities\": { \"mentions\": [ { \"start\": 3, \"end\": 14, \"username\": \"skipbolden\" } ] }, \"id\": \"1275840892285399041\", \"lang\": \"en\", \"possibly_sensitive\": false, \"referenced_tweets\": [ { \"type\": \"retweeted\", \"id\": \"1275809336988557314\" } ], \"source\": \"Twitter Web App\", \"text\": \"RT @skipbolden: It's 1963 in The Bronx, NYC. The magic, the music, the mys { \"data\": [ { \"id\": \"1275840243636322304\", \"text\": \"RT @polarbearrs: Hi #VisibleWomen ✨ I’m Anna, I’m a Black + Latina Caribbean illustrator based in NYC. I love making dreamy surrealist por…\" }, { \"id\": \"1275840238498308097\", \"text\": \"RT @DavidYankovich: A man who admitted his own guilt twice is getting freed from prison while black folks who jump a turnstile in NYC subwa…\" }, { \"id\": \"1275840234521899008\", \"text\": \"@freetesla11 @square1_NYC @FakeMikeMiseph @ajn465 @krystalball His evils have actually become bipartisan for the most part. Much like Reagan, in a sense.\\nTrump is disorganized and incompetent. He was handed an unprecedented level of power when he got inaugurate",
+    "meta": {
+      "name": "Recent search",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/recent?query=",
+      "chunk_index": 2,
+      "id": "8c46b35c424d61bdf5c79fa972eb8f42e549bdaf"
+    }
+  },
+  {
+    "text": "Name: Full-archive search Method: GET URL: https://api.twitter.com/2/tweets/search/all?query= Description: Search across the complete history of public Tweets matching a search query; since the first Tweet was created in March 2006. For full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all) for this endpoint. **NOTE** this endpoint requires access via the Academic Research product track QueryParams: query= (Required. Query for matching Tweets. Up to 1024 characters.), start_time= (The oldest UTC timestamp from which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), end_time= (The newest, most recent UTC timestamp to which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), since_id= (Returns results with a Tweet ID greater than (that is, more recent than) the specified ID. The ID specified is exclusive and responses will not include it.), until_id= (Returns results with a Tweet ID less than (that is, older than) the specified ID. The ID specified is exclusive and responses will not include it.), max_results= (The maximum number of search results to be returned by a request. A number between 10 and the system limit (currently 100). By default, a request response will return 10 results.), next_token= (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.), tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text ), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none),",
+    "meta": {
+      "name": "Full-archive search",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/all?query=",
+      "chunk_index": 0,
+      "id": "8a43d7b2376ea3ae2712f03ef78a2823b5191e40"
+    }
+  },
+  {
+    "text": "is pulled directly from the response provided by the API, and should not be modified.), tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text ), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,preview_image_url,public_metrics,type,url,width Default values: media_key,type ), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id, options), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username)",
+    "meta": {
+      "name": "Full-archive search",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/all?query=",
+      "chunk_index": 1,
+      "id": "7bfed01942ffa0c94fd0912d9e219d1ab03f0362"
+    }
+  },
+  {
+    "text": "Name: Recent Tweet counts\n\nMethod: GET\n\nURL: https://api.twitter.com/2/tweets/counts/recent?query=\n\nDescription: Search for public Tweets created in the last 7 days.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent) for this endpoint.\n\nQueryParams: query= (Required. Query for matching Tweets. Up to 512 characters.), start_time= (The oldest UTC timestamp (from most recent 7 days) from which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), end_time= (The newest, most recent UTC timestamp to which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), since_id= (Returns results with a Tweet ID greater than (that is, more recent than) the specified ID. The ID specified is exclusive and responses will not include it.), until_id= (Returns results with a Tweet ID less than (that is, older than) the specified ID. The ID specified is exclusive and responses will not include it.), granularity=None (This is the granularity that you want the timeseries count data to be grouped by. Possible values are day, hour or minute. The default granularity, if not specified is hour.)",
+    "meta": {
+      "name": "Recent Tweet counts",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/counts/recent?query=",
+      "chunk_index": 0,
+      "id": "6b3318e205872c1e45c146d7cc40349917316952"
+    }
+  },
+  {
+    "text": "Name: Full-archive Tweet counts\n\nMethod: GET\n\nURL: https://api.twitter.com/2/tweets/counts/all?query=\n\nDescription: Search across the complete history of public Tweets matching a search query; since the first Tweet was created in March 2006.\n\nFor full details, see the [API reference](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all) for this endpoint.\n\n\n**NOTE** this endpoint requires access via the Academic Research product track\n\nQueryParams: query= (Required. Query for matching Tweets. Up to 1024 characters.), start_time= (The oldest UTC timestamp from which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), end_time= (The newest, most recent UTC timestamp to which the Tweets will be provided. YYYY-MM-DDTHH:mm:ssZ (ISO 8601/RFC 3339).), since_id= (Returns results with a Tweet ID greater than (that is, more recent than) the specified ID. The ID specified is exclusive and responses will not include it.), until_id= (Returns results with a Tweet ID less than (that is, older than) the specified ID. The ID specified is exclusive and responses will not include it.), next_token= (This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.), granularity=None (This is the granularity that you want the timeseries count data to be grouped by. Possible values are day, hour or minute. The default granularity, if not specified is hour.)",
+    "meta": {
+      "name": "Full-archive Tweet counts",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/counts/all?query=",
+      "chunk_index": 0,
+      "id": "8a0a22662401b2173fb740001a5ddad92c18a2ca"
+    }
+  },
+  {
+    "text": "Name: Add Rules Method: POST URL: https://api.twitter.com/2/tweets/search/stream/rules Description: Create filter rules. To create one or more rules, submit an add payload as an array of rules and operators. RequestBody: { \"add\": [ { \"value\": \"\", \"tag\": \"\" } ] } Responses: { \"errors\": [ { \"parameters\": { \"add.value\": [] }, \"message\": \"field is required\" } ], \"title\": \"Invalid Request\", \"detail\": \"One or more parameters to your request was invalid.\", \"type\": \"https://api.twitter.com/2/problems/invalid-request\" } { \"data\": [ { \"value\": \"tostones recipe\", \"id\": \"1273646795642421249\" } ], \"meta\": { \"sent\": \"2020-06-18T16:00:33.972Z\", \"summary\": { \"created\": 1, \"not_created\": 0, \"valid\": 1, \"invalid\": 0 } } } { \"data\": [ { \"value\": \"meme has:images\", \"id\": \"1273636687768285186\" }, { \"value\": \"puppy has:media\", \"tag\": \"puppies with media\", \"id\": \"1273636687768285187\" } ], \"meta\": { \"sent\": \"2020-06-18T15:20:24.063Z\", \"summary\": { \"created\": 2, \"not_created\": 0, \"valid\": 2, \"invalid\": 0 } } } { \"client_id\": \"16340226\", \"required_enrollment\": \"Standard Basic\", \"registration_url\": \"https://developer.twitter.com/en/account\", \"title\": \"Client Forbidden\", \"detail\": \"This request must be made using an approved developer account that is enrolled in the requested endpoint. Learn more by visiting our documentation.\", \"reason\": \"client-not-enrolled\", \"type\": \"https://api.twitter.com/2/problems/client-forbidden\" } { \"meta\": { \"sent\": \"2020-06-18T15:56:35.056Z\", \"summary\": { \"created\": 0, \"not_created\": 1, \"valid\": 0, \"invalid\": 1 } }, \"errors\": [ { \"value\": \"plantains or tostones or guacamole or arepas or tacos or mushrooms or porcini or hen of the woods or cremini or enoki or shiitake or carbonara or cacio e pepe or amatriciana or parmigiano reggiano or california burrito or chipotle or carne asada fries or laksa or hokkien mee or chili crab or nasi lemak or hainan chicken rice or",
+    "meta": {
+      "name": "Add Rules",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 0,
+      "id": "34772672ef9d7fb93946ab10e4c5db1a562cfa86"
+    }
+  },
+  {
+    "text": "\"plantains or tostones or guacamole or arepas or tacos or mushrooms or porcini or hen of the woods or cremini or enoki or shiitake or carbonara or cacio e pepe or amatriciana or parmigiano reggiano or california burrito or chipotle or carne asada fries or laksa or hokkien mee or chili crab or nasi lemak or hainan chicken rice or kaya toast or bak kut teh or popiah or pisang goreng or curry puff or nasi uduk or martabak or fried chicken or bbq or kimchi or yukgaejang or galbitang or xiao long bao or pizza or ice cream sandwich\", \"det { \"errors\": [ { \"parameters\": { \"delete\": [] }, \"message\": \"JSON doesn't match expected schema\" } ], \"title\": \"Invalid Request\", \"detail\": \"One or more parameters to your request was invalid.\", \"type\": \"https://api.twitter.com/2/problems/invalid-request\" } { \"meta\": { \"sent\": \"2020-07-09T21:13:18.284Z\", \"summary\": { \"deleted\": 1, \"not_deleted\": 0 } } }",
+    "meta": {
+      "name": "Add Rules",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 1,
+      "id": "373d6f45bf008b04787b5e9eff127197a0da75fb"
+    }
+  },
+  {
+    "text": "Name: Retrieve Rules\n\nMethod: GET\n\nURL: https://api.twitter.com/2/tweets/search/stream/rules\n\nDescription: Returns a list of filter rules currently active on the streaming endpoint.\n\nResponses: {\n    \"data\": [\n        {\n            \"id\": \"1273636687768285186\",\n            \"value\": \"meme has:images\"\n        },\n        {\n            \"id\": \"1273636687768285187\",\n            \"value\": \"puppy has:media\",\n            \"tag\": \"puppies with media\"\n        }\n    ],\n    \"meta\": {\n        \"sent\": \"2020-06-18T15:21:58.638Z\"\n    }\n} {\n    \"client_id\": \"16340226\",\n    \"required_enrollment\": \"Standard Basic\",\n    \"registration_url\": \"https://developer.twitter.com/en/account\",\n    \"title\": \"Client Forbidden\",\n    \"detail\": \"This request must be made using an approved developer account that is enrolled in the requested endpoint. Learn more by visiting our documentation.\",\n    \"reason\": \"client-not-enrolled\",\n    \"type\": \"https://api.twitter.com/2/problems/client-forbidden\"\n} {\n    \"title\": \"Unauthorized\",\n    \"type\": \"about:blank\",\n    \"status\": 401,\n    \"detail\": \"Unauthorized\"\n}",
+    "meta": {
+      "name": "Retrieve Rules",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 0,
+      "id": "b59f1efb2313f56cae007e06599b203943901833"
+    }
+  },
+  {
+    "text": "Name: Delete Rules (by rule ID) Method: POST URL: https://api.twitter.com/2/tweets/search/stream/rules Description: Delete filter rules. To delete one or more rules, submit a delete object payload with an array of rule IDs to delete. RequestBody: { \"delete\": { \"ids\": [ \"\" ] } } Responses: { \"errors\": [ { \"parameters\": { \"add.value\": [] }, \"message\": \"field is required\" } ], \"title\": \"Invalid Request\", \"detail\": \"One or more parameters to your request was invalid.\", \"type\": \"https://api.twitter.com/2/problems/invalid-request\" } { \"data\": [ { \"value\": \"tostones recipe\", \"id\": \"1273646795642421249\" } ], \"meta\": { \"sent\": \"2020-06-18T16:00:33.972Z\", \"summary\": { \"created\": 1, \"not_created\": 0, \"valid\": 1, \"invalid\": 0 } } } { \"meta\": { \"sent\": \"2020-07-09T21:13:18.284Z\", \"summary\": { \"deleted\": 1, \"not_deleted\": 0 } } } { \"client_id\": \"16340226\", \"required_enrollment\": \"Standard Basic\", \"registration_url\": \"https://developer.twitter.com/en/account\", \"title\": \"Client Forbidden\", \"detail\": \"This request must be made using an approved developer account that is enrolled in the requested endpoint. Learn more by visiting our documentation.\", \"reason\": \"client-not-enrolled\", \"type\": \"https://api.twitter.com/2/problems/client-forbidden\" } { \"meta\": { \"sent\": \"2020-06-18T15:56:35.056Z\", \"summary\": { \"created\": 0, \"not_created\": 1, \"valid\": 0, \"invalid\": 1 } }, \"errors\": [ { \"value\": \"plantains or tostones or guacamole or arepas or tacos or mushrooms or porcini or hen of the woods or cremini or enoki or shiitake or carbonara or cacio e pepe or amatriciana or parmigiano reggiano or california burrito or chipotle or carne asada fries or laksa or hokkien mee or chili crab or nasi lemak or hainan chicken rice or kaya toast or bak kut teh or popiah or pisang goreng or curry puff or nasi uduk or martabak or fried chicken",
+    "meta": {
+      "name": "Delete Rules (by rule ID)",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 0,
+      "id": "cb6eabb576ae4d186ca9a59e7ff0a2b307d821ca"
+    }
+  },
+  {
+    "text": "or shiitake or carbonara or cacio e pepe or amatriciana or parmigiano reggiano or california burrito or chipotle or carne asada fries or laksa or hokkien mee or chili crab or nasi lemak or hainan chicken rice or kaya toast or bak kut teh or popiah or pisang goreng or curry puff or nasi uduk or martabak or fried chicken or bbq or kimchi or yukgaejang or galbitang or xiao long bao or pizza or ice cream sandwich\", \"det { \"errors\": [ { \"parameters\": { \"delete\": [] }, \"message\": \"JSON doesn't match expected schema\" } ], \"title\": \"Invalid Request\", \"detail\": \"One or more parameters to your request was invalid.\", \"type\": \"https://api.twitter.com/2/problems/invalid-request\" } { \"data\": [ { \"value\": \"meme has:images\", \"id\": \"1273636687768285186\" }, { \"value\": \"puppy has:media\", \"tag\": \"puppies with media\", \"id\": \"1273636687768285187\" } ], \"meta\": { \"sent\": \"2020-06-18T15:20:24.063Z\", \"summary\": { \"created\": 2, \"not_created\": 0, \"valid\": 2, \"invalid\": 0 } } }",
+    "meta": {
+      "name": "Delete Rules (by rule ID)",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 1,
+      "id": "083021f803db6f3b859c3820c59d0f6f0c8139d8"
+    }
+  },
+  {
+    "text": "Name: Delete Rules (by rule value) Method: POST URL: https://api.twitter.com/2/tweets/search/stream/rules Description: Delete filter rules. To delete one or more rules, submit a delete object payload with an array of rule values to delete. RequestBody: { \"delete\": { \"values\": [ \"\" ] } } Responses: { \"data\": [ { \"value\": \"tostones recipe\", \"id\": \"1273646795642421249\" } ], \"meta\": { \"sent\": \"2020-06-18T16:00:33.972Z\", \"summary\": { \"created\": 1, \"not_created\": 0, \"valid\": 1, \"invalid\": 0 } } } { \"meta\": { \"sent\": \"2020-07-09T21:13:18.284Z\", \"summary\": { \"deleted\": 1, \"not_deleted\": 0 } } } { \"client_id\": \"16340226\", \"required_enrollment\": \"Standard Basic\", \"registration_url\": \"https://developer.twitter.com/en/account\", \"title\": \"Client Forbidden\", \"detail\": \"This request must be made using an approved developer account that is enrolled in the requested endpoint. Learn more by visiting our documentation.\", \"reason\": \"client-not-enrolled\", \"type\": \"https://api.twitter.com/2/problems/client-forbidden\" } { \"meta\": { \"sent\": \"2020-06-18T15:56:35.056Z\", \"summary\": { \"created\": 0, \"not_created\": 1, \"valid\": 0, \"invalid\": 1 } }, \"errors\": [ { \"value\": \"plantains or tostones or guacamole or arepas or tacos or mushrooms or porcini or hen of the woods or cremini or enoki or shiitake or carbonara or cacio e pepe or amatriciana or parmigiano reggiano or california burrito or chipotle or carne asada fries or laksa or hokkien mee or chili crab or nasi lemak or hainan chicken rice or kaya toast or bak kut teh or popiah or pisang goreng or curry puff or nasi uduk or martabak or fried chicken or bbq or kimchi or yukgaejang or galbitang or xiao long bao or pizza or ice cream sandwich\", \"det { \"data\": [ { \"value\": \"meme has:images\", \"id\": \"1273636687768285186\" }, { \"value\":",
+    "meta": {
+      "name": "Delete Rules (by rule value)",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 0,
+      "id": "74c5bf01cfbd708296055666c5614bcf8b47f4c0"
+    }
+  },
+  {
+    "text": "nasi lemak or hainan chicken rice or kaya toast or bak kut teh or popiah or pisang goreng or curry puff or nasi uduk or martabak or fried chicken or bbq or kimchi or yukgaejang or galbitang or xiao long bao or pizza or ice cream sandwich\", \"det { \"data\": [ { \"value\": \"meme has:images\", \"id\": \"1273636687768285186\" }, { \"value\": \"puppy has:media\", \"tag\": \"puppies with media\", \"id\": \"1273636687768285187\" } ], \"meta\": { \"sent\": \"2020-06-18T15:20:24.063Z\", \"summary\": { \"created\": 2, \"not_created\": 0, \"valid\": 2, \"invalid\": 0 } } } { \"errors\": [ { \"parameters\": { \"add.value\": [] }, \"message\": \"field is required\" } ], \"title\": \"Invalid Request\", \"detail\": \"One or more parameters to your request was invalid.\", \"type\": \"https://api.twitter.com/2/problems/invalid-request\" } { \"errors\": [ { \"parameters\": { \"delete\": [] }, \"message\": \"JSON doesn't match expected schema\" } ], \"title\": \"Invalid Request\", \"detail\": \"One or more parameters to your request was invalid.\", \"type\": \"https://api.twitter.com/2/problems/invalid-request\" }",
+    "meta": {
+      "name": "Delete Rules (by rule value)",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/tweets/search/stream/rules",
+      "chunk_index": 1,
+      "id": "9c52cba5d64ea3b217c9792b171b9ffb162aab91"
+    }
+  },
+  {
+    "text": "Name: Stream (see description) Method: GET URL: https://api.twitter.com/2/tweets/search/stream Description: Streams Tweets in real-time based on a specific set of filter rules. Please note streaming responses are currently [not supported](https://github.com/postmanlabs/postman-app-support/issues/5040) in Postman. Use this to help form your request, then click on Code > cURL. Copy the cURL command and paste in terminal to view the response. QueryParams: tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,preview_image_url,public_metrics,type,url,width Default values: media_key,type), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id,options), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username), backfill_minutes=None (Provide a whole number between 1 and 5. This parameter enables the recovery of up to five minutes worth of data that may have been missed during a disconnection. The backfilled Tweets will automatically flow through a reconnected stream, with older Tweets generally being delivered before any newly matching Tweets. This feature will deliver all Tweets that matched your rules and were published during the timeframe selected, meaning that if you were disconnected for 90 seconds, and you requested two minutes of backfill, you will receive 30 seconds worth of",
+    "meta": {
+      "name": "Stream (see description)",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/stream",
+      "chunk_index": 0,
+      "id": "83ee9a8cadd67c6de60520528d1de9f26a15104f"
+    }
+  },
+  {
+    "text": "backfilled Tweets will automatically flow through a reconnected stream, with older Tweets generally being delivered before any newly matching Tweets. This feature will deliver all Tweets that matched your rules and were published during the timeframe selected, meaning that if you were disconnected for 90 seconds, and you requested two minutes of backfill, you will receive 30 seconds worth of duplicate Tweets. Due to this, you should make sure your system is tolerant of duplicate data. *This feature is currently only available to the academic research product track*.) Responses: { \"title\": \"ConnectionException\", \"detail\": \"This stream is currently at the maximum allowed connection limit.\", \"connection_issue\": \"TooManyConnections\", \"type\": \"https://api.twitter.com/2/problems/streaming-connection\" }",
+    "meta": {
+      "name": "Stream (see description)",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/search/stream",
+      "chunk_index": 1,
+      "id": "5eca35f40ff54411fd5552126a9b31ae794e82d6"
+    }
+  },
+  {
+    "text": "Name: Stream (see description) Method: GET URL: https://api.twitter.com/2/tweets/sample/stream Description: Stream, in real-time, roughly a 1% sample of all public Tweets. Please note streaming responses are currently [not supported](https://github.com/postmanlabs/postman-app-support/issues/5040) in Postman. Use this to help form your request, then click on Code > cURL. Copy the cURL command and paste in terminal to view the response. QueryParams: tweet.fields= (Comma-separated list of fields for the Tweet object. Allowed values: attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets,reply_settings,source,text,withheld Default values: id,text), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object. Allowed values: attachments.poll_ids,attachments.media_keys,author_id,geo.place_id,in_reply_to_user_id,referenced_tweets.id,entities.mentions.username,referenced_tweets.id.author_id Default values: none), media.fields= (Comma-separated list of fields for the media object. Expansion required. Allowed values: duration_ms,height,media_key,preview_image_url,public_metrics,type,url,width Default values: media_key,type), poll.fields= (Comma-separated list of fields for the poll object. Expansion required. Allowed values: duration_minutes,end_datetime,id,options,voting_status Default values: id,options), place.fields= (Comma-separated list of fields for the place object. Expansion required. Allowed values: contained_within,country,country_code,full_name,geo,id,name,place_type Default values: id,full_name), user.fields= (Comma-separated list of fields for the user object. Expansion required. Allowed values: created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld Default values: id,name,username), backfill_minutes=None (Provide a whole number between 1 and 5. This parameter enables the recovery of up to five minutes worth of data that may have been missed during a disconnection. The backfilled Tweets will automatically flow through a reconnected stream, with older Tweets generally being delivered before any newly matching Tweets. This feature will deliver all Tweets that matched your rules and were published during the timeframe selected, meaning that if you were disconnected for 90 seconds, and you requested two minutes of backfill, you will receive 30 seconds worth of duplicate",
+    "meta": {
+      "name": "Stream (see description)",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/sample/stream",
+      "chunk_index": 0,
+      "id": "83ee9a8cadd67c6de60520528d1de9f26a15104f"
+    }
+  },
+  {
+    "text": "Tweets will automatically flow through a reconnected stream, with older Tweets generally being delivered before any newly matching Tweets. This feature will deliver all Tweets that matched your rules and were published during the timeframe selected, meaning that if you were disconnected for 90 seconds, and you requested two minutes of backfill, you will receive 30 seconds worth of duplicate Tweets. Due to this, you should make sure your system is tolerant of duplicate data. *This feature is currently only available to the academic research product track*.)",
+    "meta": {
+      "name": "Stream (see description)",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/tweets/sample/stream",
+      "chunk_index": 1,
+      "id": "5eca35f40ff54411fd5552126a9b31ae794e82d6"
+    }
+  },
+  {
+    "text": "Name: Spaces lookup by single ID\n\nMethod: GET\n\nURL: https://api.twitter.com/2/spaces/:id?space.fields=&expansions=&user.fields=\n\nDescription: This endpoint returns information about a single Space with the specified ID.\n\nQueryParams: space.fields= (Comma-separated list of fields from the Space object you want to return from your request.\n\nAvailable fields:\nhost_ids,created_at,creator_id,id,lang,invited_user_ids, participants,speaker_ids,started_at,state,title,updated_at, scheduled_start,is_ticketed\n\nDefault fields:\nid,state), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAvailable values:\ninvited_user_ids,speaker_ids,creator_id,host_ids), user.fields= (Comma-separated list of fields from the Space object you want to return from your request.\n\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\n\nDefault values:\nid,name,username)\n\nResponses: {\n \"data\": {\n  \"id\": \"\",\n  \"state\": \"est irure eu mollit\",\n  \"host_ids\": [\n   \"<string>\",\n   \"<string>\"\n  ],\n  \"created_at\": \"<dateTime>\",\n  \"creator_id\": \"<string>\",\n  \"lang\": \"pariatur tempor in\",\n  \"is_ticketed\": \"<boolean>\",\n  \"invited_user_ids\": [\n   \"<string>\",\n   \"<string>\"\n  ],\n  \"participant_count\": \"<integer>\",\n  \"scheduled_start\": \"<dateTime>\",\n  \"speaker_ids\": [\n   \"<string>\",\n   \"<string>\"\n  ],\n  \"started_at\": \"<dateTime>\",\n  \"title\": \"<string>\",\n  \"updated_at\": \"<dateTime>\"\n },\n \"includes\": {\n  \"users\": [\n   {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"username\": \"<string>\",\n    \"created_at\": \"<dateTime>\",\n    \"protected\": \"<boolean>\",\n    \"verified\": \"<boolean>\",\n    \"withheld\": {\n     \"country_codes\": [\n      {\n       \"value\": \"<Error: Too many levels of nesting to  {\n \"code\": \"<integer>\",\n \"message\": \"<string>\"\n}",
+    "meta": {
+      "name": "Spaces lookup by single ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/spaces/:id?space.fields=&expansions=&user.fields=",
+      "chunk_index": 0,
+      "id": "ebac52813a8e5fcfadab6e913c0d70d5b0d4802c"
+    }
+  },
+  {
+    "text": "Name: Spaces lookup by list of IDs\n\nMethod: GET\n\nURL: https://api.twitter.com/2/spaces?ids=&space.fields=&expansions=&user.fields=\n\nDescription: This endpoint returns information about one or more Spaces with the specified comma-separated list of IDs. You can request up to 100 Spaces in a single request\n\nQueryParams: ids= (Required. A comma separated list of IDs of the Spaces to lookup. You can specify up to 100 IDs.), space.fields= (Comma-separated list of fields from the Space object you want to return from your request.\n\nAvailable fields:\nhost_ids,created_at,creator_id,id,lang,invited_user_ids, participants,speaker_ids,started_at,state,title,updated_at, scheduled_start,is_ticketed\n\nDefault fields:\nid,state), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAvailable values:\ninvited_user_ids,speaker_ids,creator_id,host_ids), user.fields= (Comma-separated list of fields from the Space object you want to return from your request.\n\nAllowed values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\n\nDefault values:\nid,name,username)\n\nResponses: {\n \"data\": [\n  {\n   \"id\": \"\",\n   \"state\": \"dolore qui sunt non\",\n   \"host_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"created_at\": \"<dateTime>\",\n   \"creator_id\": \"<string>\",\n   \"lang\": \"ipsum aliqua\",\n   \"is_ticketed\": \"<boolean>\",\n   \"invited_user_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"participant_count\": \"<integer>\",\n   \"scheduled_start\": \"<dateTime>\",\n   \"speaker_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"started_at\": \"<dateTime>\",\n   \"title\": \"<string>\",\n   \"updated_at\": \"<dateTime>\"\n  }\n ],\n \"includes\": {\n  \"users\": [\n   {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"username\": \"<string>\",\n    \"created_at\": \"<dateTime>\",\n    \"protected\": \"<boolean>\",\n    \"verified\": \"<boolean>\",\n    \"withheld\": {\n     \"country_codes\": [\n      {\n       \"value\": \"<Error: Too m {\n \"code\": \"<integer>\",\n \"message\": \"<string>\"\n}",
+    "meta": {
+      "name": "Spaces lookup by list of IDs",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/spaces?ids=&space.fields=&expansions=&user.fields=",
+      "chunk_index": 0,
+      "id": "218c69ec4e5b36c07f764741a9c1af48eec864d5"
+    }
+  },
+  {
+    "text": "Name: Lookup Spaces created by one or more users\n\nMethod: GET\n\nURL: https://api.twitter.com/2/spaces/by/creator_id?user_ids=&space.fields=&expansions=&user.fields=\n\nDescription: This endpoint returns information about a user. Specify user by username.\n\nQueryParams: user_ids= (Required. A comma-separated list of user IDs. You can specify up 100 IDs in a single request.), space.fields= (Comma-separated list of fields from the Space object you want to return from your request.\n\nAvailable fields:\nhost_ids,created_at,creator_id,id,lang,invited_user_ids, participants,speaker_ids,started_at,state,title,updated_at, scheduled_start,is_ticketed\n\nDefault fields:\nid,state), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAvailable values:\ninvited_user_ids,speaker_ids,creator_id,host_ids), user.fields= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAvailable values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\n\nDefault values:\nid,name.username)\n\nResponses: {\n \"data\": [\n  {\n   \"id\": \"\",\n   \"state\": \"dolore qui sunt non\",\n   \"host_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"created_at\": \"<dateTime>\",\n   \"creator_id\": \"<string>\",\n   \"lang\": \"ipsum aliqua\",\n   \"is_ticketed\": \"<boolean>\",\n   \"invited_user_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"participant_count\": \"<integer>\",\n   \"scheduled_start\": \"<dateTime>\",\n   \"speaker_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"started_at\": \"<dateTime>\",\n   \"title\": \"<string>\",\n   \"updated_at\": \"<dateTime>\"\n  }\n ],\n \"includes\": {\n  \"users\": [\n   {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"username\": \"<string>\",\n    \"created_at\": \"<dateTime>\",\n    \"protected\": \"<boolean>\",\n    \"verified\": \"<boolean>\",\n    \"withheld\": {\n     \"country_codes\": [\n      {\n       \"value\": \"<Error: Too m {\n \"code\": \"<integer>\",\n \"message\": \"<string>\"\n}",
+    "meta": {
+      "name": "Lookup Spaces created by one or more users",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/spaces/by/creator_id?user_ids=&space.fields=&expansions=&user.fields=",
+      "chunk_index": 0,
+      "id": "59a86edcce4c2b40fc09a28b1fa8990b1e32f687"
+    }
+  },
+  {
+    "text": "Name: Search Spaces by title\n\nMethod: GET\n\nURL: https://api.twitter.com/2/spaces/search?query=&state=live&space.fields=&expansions=&user.fields\n\nDescription: This endpoint returns Spaces matching the specified keyword query.\n\nQueryParams: query= (Required. A search term. Can be a keyword, hashtag, or mention.), state=live (Required. Return only Spaces with a specific running status.\n\nAllowed values:\nlive,scheduled), space.fields= (Comma-separated list of fields from the Space object you want to return from your request.\n\nAvailable fields:\nhost_ids,created_at,creator_id,id,lang,invited_user_ids, participants,speaker_ids,started_at,state,title,updated_at, scheduled_start,is_ticketed\n\nDefault fields:\nid,state), expansions= (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAvailable values:\ninvited_user_ids,speaker_ids,creator_id,host_ids), user.fields=None (Comma-separated list of fields to expand. Expansions enable requests to expand an ID into a full object in the includes response object.\n\nAvailable values:\ncreated_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld\n\nDefault values:\nid,name,username)\n\nResponses: {\n \"data\": [\n  {\n   \"id\": \"\",\n   \"state\": \"dolore qui sunt non\",\n   \"host_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"created_at\": \"<dateTime>\",\n   \"creator_id\": \"<string>\",\n   \"lang\": \"ipsum aliqua\",\n   \"is_ticketed\": \"<boolean>\",\n   \"invited_user_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"participant_count\": \"<integer>\",\n   \"scheduled_start\": \"<dateTime>\",\n   \"speaker_ids\": [\n    \"<string>\",\n    \"<string>\"\n   ],\n   \"started_at\": \"<dateTime>\",\n   \"title\": \"<string>\",\n   \"updated_at\": \"<dateTime>\"\n  }\n ],\n \"includes\": {\n  \"users\": [\n   {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"username\": \"<string>\",\n    \"created_at\": \"<dateTime>\",\n    \"protected\": \"<boolean>\",\n    \"verified\": \"<boolean>\",\n    \"withheld\": {\n     \"country_codes\": [\n      {\n       \"value\": \"<Error: Too m",
+    "meta": {
+      "name": "Search Spaces by title",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/spaces/search?query=&state=live&space.fields=&expansions=&user.fields",
+      "chunk_index": 0,
+      "id": "8f8dc2f283d9591a69b69c3d52409fe4f7ccaf66"
+    }
+  },
+  {
+    "text": "Name: Create a batch compliance job\n\nMethod: POST\n\nURL: https://api.twitter.com/2/compliance/jobs\n\nRequestBody: {\n    \"type\": \"tweets\"\n}",
+    "meta": {
+      "name": "Create a batch compliance job",
+      "method": "POST",
+      "url": "https://api.twitter.com/2/compliance/jobs",
+      "chunk_index": 0,
+      "id": "0b0a1dfc4c45f881ba568e152202f1ff5e866179"
+    }
+  },
+  {
+    "text": "Name: Get all batch compliance jobs\n\nMethod: GET\n\nURL: https://api.twitter.com/2/compliance/jobs?type=tweets\n\nQueryParams: type=tweets ()",
+    "meta": {
+      "name": "Get all batch compliance jobs",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/compliance/jobs?type=tweets",
+      "chunk_index": 0,
+      "id": "e1d988c79842ee5e3b3092b976ec63b6f5f47712"
+    }
+  },
+  {
+    "text": "Name: Get a compliance job by ID\n\nMethod: GET\n\nURL: https://api.twitter.com/2/compliance/jobs/:id",
+    "meta": {
+      "name": "Get a compliance job by ID",
+      "method": "GET",
+      "url": "https://api.twitter.com/2/compliance/jobs/:id",
+      "chunk_index": 0,
+      "id": "2cd59b0bf06638d2deec5c514ff182839b10cafc"
+    }
+  }
+]
