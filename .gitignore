@@ -1,0 +1,4 @@
+postman-twitter-api/
+__pycache__/
+*.npy
+*.bin
